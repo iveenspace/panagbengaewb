@@ -30,8 +30,8 @@
         }
         
         .photo-slot {
-            background-color: #FFFF00;
-            border: 2px solid #FFFF00;
+            background-color: #cfff04;
+            border: 2px solid #cfff04;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -110,7 +110,7 @@
             border-radius: 12px;
             padding: 20px;
             box-shadow: 0 10px 30px rgb(0, 0, 0);
-            border: 2px solid #FFFF00;
+            border: 2px solid #cfff04;
             position: relative;
             overflow: hidden;
             width: 450px;
@@ -118,24 +118,24 @@
         }
         
         .photostrip-footer {
-            border-top: 2px solid #FFFF00;
+            border-top: 2px solid #FF69B4;
             padding-top: 20px;
             margin-top: 6px;
             text-align: center;
         }
         
         .photostrip-footer p {
-            color: #FFFF00;
+            color: #FF69B4;
             font-weight: 600;
         }
         
         .photostrip-footer p:nth-child(2) {
-            color: #FFFF00;
+            color: #FF69B4;
             font-weight: 500;
         }
         
         .photostrip-footer p:nth-child(3) {
-            color: #FFFF00;
+            color: #FF69B4;
             font-weight: ;
         }
         
@@ -665,11 +665,11 @@
                             const yPos = photoStartY + (i * (photoHeight + photoSpacing));
                             
                             // Draw fixed rectangle frame background
-                            ctx.fillStyle = '#FFFF00';
+                            ctx.fillStyle = '#cfff04';
                             ctx.fillRect(photoX, yPos, photoWidth, photoHeight);
                             
                             // Add frame border
-                            ctx.strokeStyle = '#FFFF00';
+                            ctx.strokeStyle = '#cfff04';
                             ctx.lineWidth = 2;
                             ctx.strokeRect(photoX, yPos, photoWidth, photoHeight);
                             
@@ -720,11 +720,11 @@
                     // Footer section - matching the exact layout with gold colors
                     const footerStartY = stripHeight - 70;
                     
-                    ctx.fillStyle = '#FFFF00';
+                    ctx.fillStyle = '#FF69B4';
                     ctx.font = 'bold 18px "Montserrat", sans-serif';
                     ctx.fillText('PANAGBENGA FESTIVAL', stripWidth / 2, footerStartY + 10);
                     
-                    ctx.fillStyle = '#FFFF00';
+                    ctx.fillStyle = '#FF69B4';
                     ctx.font = 'bold 15px "Montserrat", sans-serif';
                     ctx.fillText('PANAGBENGA FESTIVAL', stripWidth / 2, footerStartY + 30);
                     
